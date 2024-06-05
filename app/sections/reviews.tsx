@@ -86,7 +86,7 @@ export const Reviews = () => {
       >
         <span className="text-[#fafafa]">Ver perfil no</span>
         <Image
-          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/doctoralia.svg`}
+          src="https://pereiralivia.github.io/gabrielaromanhole//doctoralia.svg"
           alt="Logo do Doctoralia"
           width={400}
           height={400}

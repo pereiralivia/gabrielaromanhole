@@ -14,7 +14,7 @@ export const About = () => {
         </div>
         <div>
           <Image
-            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/gabriela-romanhole.png`}
+            src="https://pereiralivia.github.io/gabrielaromanhole/gabriela-romanhole.png"
             alt="Gabriela Romanhole"
             width={400}
             height={400}

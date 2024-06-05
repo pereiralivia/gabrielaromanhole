@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { playfairDisplay } from "../layout";
 import { motion } from "framer-motion";
+import { playfairDisplay } from "../ui/fonts";
 
 export const About = () => {
   return (

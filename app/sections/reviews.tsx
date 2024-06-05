@@ -1,7 +1,7 @@
 import { StarIcon } from "lucide-react";
-import { playfairDisplay } from "../layout";
 import Image from "next/image";
 import Link from "next/link";
+import { playfairDisplay } from "../ui/fonts";
 
 export const Reviews = () => {
   const reviews = [

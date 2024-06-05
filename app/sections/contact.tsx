@@ -1,4 +1,4 @@
-import { playfairDisplay } from "../layout";
+import { playfairDisplay } from "../ui/fonts";
 import { Footer } from "./footer";
 
 export const Contact = () => {

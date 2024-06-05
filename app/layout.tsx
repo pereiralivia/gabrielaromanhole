@@ -1,15 +1,5 @@
-import type { Metadata } from "next";
-import { Playfair_Display, Roboto } from "next/font/google";
 import "./globals.css";
-
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
-});
-export const playfairDisplay = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["400"],
-});
+import { roboto } from "./ui/fonts";
 
 export default function RootLayout({
   children,

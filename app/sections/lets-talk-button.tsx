@@ -1,8 +1,8 @@
 "use client";
 
-import { ArrowUpRight, MenuIcon } from "lucide-react";
-import { playfairDisplay } from "../layout";
 import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
+import { playfairDisplay } from "../ui/fonts";
 
 export const LetsTalkButton = () => {
   return (

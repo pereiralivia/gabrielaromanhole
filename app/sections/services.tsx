@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { playfairDisplay } from "../layout";
+import { playfairDisplay } from "../ui/fonts";
 
 export const Services = () => {
   const services = [

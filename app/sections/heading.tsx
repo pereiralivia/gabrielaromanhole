@@ -1,4 +1,4 @@
-import { playfairDisplay } from "../layout";
+import { playfairDisplay } from "../ui/fonts";
 
 export const Heading = () => {
   return (

@@ -15,8 +15,7 @@ export const Services = () => {
             <span className="text-[#9d6d49]">
               Pensamentos intrusivos, taquicardia, sudorese intensa
             </span>{" "}
-            são sintomas que seu corpo costuma sentir em situações
-            ansiogênicas?"
+            são sintomas que seu corpo costuma sentir em situações ansiogênicas?
           </p>
         </div>
       ),

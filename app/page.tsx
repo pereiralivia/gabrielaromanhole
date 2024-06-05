@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col relative">
-      <div className="min-h-screen bg-[url('/background.png')] bg-cover">
+      <div className={`min-h-screen bg-background bg-cover`}>
         <div className="h-[45px]"></div>
         <Header setOpen={setOpen} />
         <Heading />

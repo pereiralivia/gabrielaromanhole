@@ -14,7 +14,7 @@ export const About = () => {
         </div>
         <div>
           <Image
-            src="/gabriela-romanhole.png"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/gabriela-romanhole.png`}
             alt="Gabriela Romanhole"
             width={400}
             height={400}

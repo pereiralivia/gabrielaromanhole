@@ -291,7 +291,7 @@ export const Services = () => {
             >
               {service.title}
             </AccordionTrigger>
-            <AccordionContent className="text-[#101010] bg-[#fafafa]">
+            <AccordionContent className="pt-2 text-[#101010] bg-[#fafafa] text-sm leading-6 tracking-wide md:text-md">
               {service.description}
             </AccordionContent>
           </AccordionItem>

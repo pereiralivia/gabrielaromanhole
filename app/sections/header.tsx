@@ -10,6 +10,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { useState } from "react";
+import { playfairDisplay } from "../ui/fonts";
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
@@ -22,7 +23,12 @@ export const Header = () => {
           </SheetTrigger>
           <SheetContent side="left">
             <SheetHeader>
-              <SheetTitle>GR</SheetTitle>
+              <SheetTitle
+                className={`text-start ${playfairDisplay.className} rounded-full border border-[#9d6d49] w-10 h-10 flex items-center justify-center`}
+              >
+                <span>G</span>
+                <span className="text-[#9d6d49]">R</span>
+              </SheetTitle>
               <SheetDescription>
                 <div className="pt-6 px-4">
                   <ul className="flex flex-col gap-6">

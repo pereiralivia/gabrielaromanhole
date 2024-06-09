@@ -1,3 +1,10 @@
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { playfairDisplay } from "../ui/fonts";
 import { Footer } from "./footer";
 
@@ -36,7 +43,7 @@ export const Contact = () => {
   ];
   return (
     <div
-      className="min-h-screen pt-14 bg-[#9d6d49]/10 flex flex-col md:items-stretch"
+      className="min-h-screen pt-14 bg-[#9d6d49]/10 flex flex-col "
       id="contact"
     >
       <div className="md:px-20 flex flex-col flex-1 px-6">
@@ -46,19 +53,25 @@ export const Contact = () => {
         >
           Vamos <span className="text-[#9d6d49]">conversar?</span>
         </div>
-        <div className="flex flex-1 pt-4 justify-center md:py-8">
-          <ol className="p-4 grid md:grid-cols-3 gap-8">
-            {contactSteps.map((step) => (
-              <li
-                key={step.step}
-                className="flex flex-col items-center justify-center bg-[#fafafa] p-4 rounded-lg"
+        <div className="flex pt-4 justify-center flex-1 md:py-8">
+          <ol className="p-4 grid md:flex gap-8  items-center">
+            {contactSteps.map((step, index) => (
+              <Card
+                key={step.title}
+                className="flex flex-col rounded text-[#101010] bg-[#fafafa] shadow-md shadow-[#9d6d49]/10 md:w-[300px] md:h-[220px] border-none"
               >
-                <span className="flex items-center justify-center w-8 h-8 bg-[#9d6d49]/10 text-[#9d6d49] rounded-full ring-4 ring-white">
-                  {step.step}
-                </span>
-                <h3 className="pt-4 font-medium leading-tight">{step.title}</h3>
-                <div className="text-center">{step.description}</div>
-              </li>
+                <CardHeader className="flex items-center justify-center">
+                  <CardTitle className="bg-[#9d6d49]/10 text-[#9d6d49] w-9 h-9 flex items-center justify-center rounded-full text-md">
+                    {index + 1}
+                  </CardTitle>
+                  <CardDescription className="text-md text-[#9d6d49]">
+                    {step.title}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="text-center">
+                  {step.description}
+                </CardContent>
+              </Card>
             ))}
           </ol>
         </div>

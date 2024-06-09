@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { playfairDisplay } from "../ui/fonts";
 
 export const About = () => {
@@ -82,6 +81,9 @@ export const About = () => {
               com seu meio.
             </span>
           </p>
+          <div className="border border-[#9d6d49]/60  p-2 rounded flex gap-1 w-fit text-[#9d6d49]">
+            CRP 11/09820
+          </div>
         </div>
       </div>
     </div>

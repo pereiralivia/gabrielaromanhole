@@ -1,13 +1,54 @@
 import { MenuIcon } from "lucide-react";
 import { LetsTalkButton } from "./lets-talk-button";
 import Link from "next/link";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { useState } from "react";
 
-export const Header = ({ setOpen }: { setOpen: any }) => {
+export const Header = () => {
+  const [open, setOpen] = useState(false);
   return (
-    <div className="flex justify-between items-center  border-b-[#9d6d49]/10 py-5 px-4 fixed top-0  bg-[#fafafa] z-50 w-full md:px-20">
-      <button onClick={() => setOpen(true)} className="md:hidden">
-        <MenuIcon className="text-[#9d6d49]" />
-      </button>
+    <div className="flex justify-between items-center border-b-[#9d6d49]/10 py-5 px-4 fixed top-0  bg-[#fafafa] z-50 w-full md:px-20">
+      <div className="sm:hidden">
+        <Sheet open={open} onOpenChange={setOpen}>
+          <SheetTrigger>
+            <MenuIcon className="text-[#9d6d49]" />
+          </SheetTrigger>
+          <SheetContent side="left">
+            <SheetHeader>
+              <SheetTitle>GR</SheetTitle>
+              <SheetDescription>
+                <div className="pt-6 px-4">
+                  <ul className="flex flex-col gap-6">
+                    {[
+                      { href: "/", label: "Início" },
+                      { href: "#about", label: "Quem sou" },
+                      { href: "#services", label: "Serviços" },
+                      { href: "#reviews", label: "Avaliações" },
+                      { href: "#contact", label: "Contato" },
+                    ].map((link) => (
+                      <li
+                        key={link.href}
+                        className="uppercase text-[#9d6d49] text-start hover:underline"
+                      >
+                        <Link href={link.href} onClick={() => setOpen(!open)}>
+                          {link.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>{" "}
+              </SheetDescription>
+            </SheetHeader>
+          </SheetContent>
+        </Sheet>
+      </div>
       <ul className="gap-6 hidden md:flex">
         {[
           { href: "", label: "Início" },

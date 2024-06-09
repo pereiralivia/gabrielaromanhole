@@ -1,7 +1,26 @@
 import { motion } from "framer-motion";
 import { playfairDisplay } from "../ui/fonts";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { useEffect, useState } from "react";
 
 export const Services = () => {
+  const [currentItem, setCurrentItem] = useState("item-1");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentItem((prev) => {
+        const next = parseInt(prev.split("-")[1]) + 1;
+        return next > 18 ? "item-1" : `item-${next}`;
+      });
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [currentItem]);
+
   const services = [
     {
       title: "Ansiedade",
@@ -236,8 +255,8 @@ export const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#9d6d49]/10 md:px-20" id="services">
-      <div className="h-[45px] bg-[#fafafa]"></div>
+    <div className="min-h-screen bg-[#9d6d49]/10 md:px-14 py-6" id="services">
+      <div className="h-[45px]"></div>
       <div
         className={`px-6 py-8 uppercase text-3xl font-bold ${playfairDisplay.className}`}
       >
@@ -253,15 +272,40 @@ export const Services = () => {
           com privacidade para falar.
         </p>
       </div>
-      <div className="grid gap-6 md:grid-cols-3 pt-8 p-6">
+      <Accordion
+        type="single"
+        value={currentItem}
+        collapsible
+        className="sm:hidden w-full px-6 pt-4 "
+        orientation="vertical"
+        onValueChange={setCurrentItem}
+      >
+        {services.map((service, index) => (
+          <AccordionItem
+            key={service.title}
+            value={`item-${index + 1}`}
+            className="border-none bg-[#fafafa] rounded-tr-[30px] rounded-bl-[30px] mb-4 p-4 shadow-md shadow-[#9d6d49]/10"
+          >
+            <AccordionTrigger
+              className={`no-underline tracking-wide text-xl md:text-2xl text-[#9d6d49] font-light text-start ${playfairDisplay.className}`}
+            >
+              {service.title}
+            </AccordionTrigger>
+            <AccordionContent className="text-[#101010] bg-[#fafafa]">
+              {service.description}
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
+      <div className="hidden sm:grid gap-6 md:grid-cols-3 pt-8 p-6">
         {services.map((service) => (
           <motion.div
             key={service.title}
             whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
-            className="relative flex flex-col gap-5 rounded rounded-br-[50px]  text-[#101010] bg-[#fafafa] p-6 shadow-md shadow-[#9d6d49]/10"
+            className="relative flex flex-col gap-5 rounded rounded-br-[50px] text-[#101010] bg-[#fafafa] p-6 shadow-md shadow-[#9d6d49]/10"
           >
             <p
-              className={`tracking-wide text-xl md:text-2xl font-medium flex itemx-center gap-2 text-[#9d6d49] z-10 ${playfairDisplay.className}`}
+              className={`tracking-wide text-xl md:text-2xl font-medium text-[#9d6d49] ${playfairDisplay.className}`}
             >
               {service.title}
             </p>

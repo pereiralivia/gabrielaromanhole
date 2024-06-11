@@ -252,24 +252,37 @@ export const Services = () => {
         </p>
       ),
     },
+    {
+      title: "Etarismo",
+      description: (
+        <p>
+          Você já se deparou com{" "}
+          <span className="text-[#9d6d49]">
+            preconceitos ou limitações sociais
+          </span>{" "}
+          em decorrência de sua idade?
+        </p>
+      ),
+    },
   ];
 
   return (
-    <div className="min-h-screen bg-[#9d6d49]/10 md:px-14 py-6" id="services">
+    <div className="min-h-screen bg-[#9d6d49]/10 sm:px-14 py-6" id="services">
       <div className="h-[45px]"></div>
       <div
         className={`px-6 py-8 uppercase text-3xl font-bold ${playfairDisplay.className}`}
       >
         Serviços
       </div>
-      <div className="md:pb-4 flex flex-col gap-2 tracking-wide leading-7 text-[#101010] px-6">
+      <div className="sm:pb-4 flex flex-col gap-2 tracking-wide leading-7 text-[#101010] px-6">
         <p>
           Atendimento psicoterapêutico individual online, com metodologia
           psicanalítica.
         </p>
         <p>
           A sessão ocorre por chamada de vídeo e é necessário estar num ambiente
-          com privacidade para falar.
+          com privacidade para falar. Segue abaixo alguns exemplos das demandas
+          atendidas, dentre outros.
         </p>
       </div>
       <Accordion
@@ -287,17 +300,17 @@ export const Services = () => {
             className="border-none bg-[#fafafa] rounded-tr-[30px] rounded-bl-[30px] mb-4 p-4 shadow-md shadow-[#9d6d49]/10"
           >
             <AccordionTrigger
-              className={`no-underline tracking-wide text-xl md:text-2xl text-[#9d6d49] font-light text-start ${playfairDisplay.className}`}
+              className={`no-underline tracking-wide text-xl sm:text-2xl text-[#9d6d49] font-light text-start ${playfairDisplay.className}`}
             >
               {service.title}
             </AccordionTrigger>
-            <AccordionContent className="pt-2 text-[#101010] bg-[#fafafa] text-sm leading-6 tracking-wide md:text-md">
+            <AccordionContent className="pt-2 text-[#101010] bg-[#fafafa] text-sm leading-6 tracking-wide sm:text-md">
               {service.description}
             </AccordionContent>
           </AccordionItem>
         ))}
       </Accordion>
-      <div className="hidden sm:grid gap-6 md:grid-cols-3 pt-8 p-6">
+      <div className="hidden sm:grid gap-6 sm:grid-cols-3 pt-8 p-6">
         {services.map((service) => (
           <motion.div
             key={service.title}
@@ -305,11 +318,11 @@ export const Services = () => {
             className="relative flex flex-col gap-5 rounded rounded-br-[50px] text-[#101010] bg-[#fafafa] p-6 shadow-md shadow-[#9d6d49]/10"
           >
             <p
-              className={`tracking-wide text-xl md:text-2xl font-medium text-[#9d6d49] ${playfairDisplay.className}`}
+              className={`tracking-wide text-xl sm:text-2xl font-medium text-[#9d6d49] ${playfairDisplay.className}`}
             >
               {service.title}
             </p>
-            <div className="text-sm leading-6 tracking-wide md:text-md">
+            <div className="text-sm leading-6 tracking-wide sm:text-md">
               {service.description}
             </div>
           </motion.div>

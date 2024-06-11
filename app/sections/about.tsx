@@ -3,7 +3,7 @@ import { playfairDisplay } from "../ui/fonts";
 
 export const About = () => {
   return (
-    <div className="min-h-screen bg-[#fafafa] md:px-20 py-6 px-6" id="about">
+    <div className="min-h-screen bg-[#fafafa] sm:px-20 py-6 px-6" id="about">
       <div className="h-[45px]"></div>
       <div>
         <div
@@ -13,13 +13,13 @@ export const About = () => {
         </div>
         <div>
           <Image
-            src="https://pereiralivia.github.io/gabrielaromanhole/gabriela-romanhole.png"
+            src="https://pereiralivia.github.io/gabriela-romanhole.webp"
             alt="Gabriela Romanhole"
             width={400}
             height={400}
-            className="rounded-b-full rounded-tr-full float-right pl-6 pb-8 md:pb-0"
+            className="rounded-b-full rounded-tr-full float-right pl-6 pb-8 sm:pb-0"
           />
-          <p className="tracking-wider leading-7 gap-3 pt-8 md:pt-0">
+          <p className="tracking-wider leading-7 gap-3 pt-8 sm:pt-0">
             <span className="block pb-4">
               Desde criança me deparei com a curiosidade e o interesse em{" "}
               <span className="text-[#9d6d49]">entender de pessoas</span>. Eu as
@@ -79,6 +79,26 @@ export const About = () => {
                 compreender o ser contextualizado
               </span>{" "}
               com seu meio.
+            </span>
+            <span className="block pb-4">
+              De lá pra cá me engajo em uma{" "}
+              <span className="text-[#9d6d49]">
+                formação permanente e continuada
+              </span>
+              , através de vários canais como o contexto acadêmico, coletivos de
+              profissionais, grupos de formação (estudos, pesquisa e discussão
+              de casos clínicos), eventos da área, etc.
+            </span>
+            <span className="block pb-4">
+              Tenho verdadeira{" "}
+              <span className="text-[#9d6d49]">
+                paixão por ouvir histórias e acompanhar os movimentos
+              </span>{" "}
+              e as mudanças de quem me busca para tratamento psicológico. Fico à
+              disposição para te ouvir nessa{" "}
+              <span className="text-[#9d6d49]">
+                jornada de busca por acompanhamento psicológico!
+              </span>
             </span>
           </p>
           <div className="border border-[#9d6d49]/60  p-2 rounded flex gap-1 w-fit text-[#9d6d49]">

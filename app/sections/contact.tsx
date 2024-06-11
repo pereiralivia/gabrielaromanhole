@@ -46,19 +46,19 @@ export const Contact = () => {
       className="min-h-screen pt-14 bg-[#9d6d49]/10 flex flex-col "
       id="contact"
     >
-      <div className="md:px-20 flex flex-col flex-1 px-6">
+      <div className="sm:px-20 flex flex-col flex-1 px-6">
         <div className="h-[45px]"></div>
         <div
           className={`uppercase text-3xl font-bold ${playfairDisplay.className}`}
         >
           Vamos <span className="text-[#9d6d49]">conversar?</span>
         </div>
-        <div className="flex pt-4 justify-center flex-1 md:py-8">
-          <ol className="p-4 grid md:flex gap-8  items-center">
+        <div className="flex pt-4 justify-center flex-1 sm:py-8">
+          <div className="p-4 grid sm:flex sm:justify-center gap-8  items-center">
             {contactSteps.map((step, index) => (
               <Card
                 key={step.title}
-                className="flex flex-col rounded text-[#101010] bg-[#fafafa] shadow-md shadow-[#9d6d49]/10 md:w-[300px] md:h-[220px] border-none"
+                className="flex flex-col rounded text-[#101010] bg-[#fafafa] shadow-md shadow-[#9d6d49]/10 sm:w-[300px] sm:h-[220px] border-none"
               >
                 <CardHeader className="flex items-center justify-center">
                   <CardTitle className="bg-[#9d6d49]/10 text-[#9d6d49] w-9 h-9 flex items-center justify-center rounded-full text-md">
@@ -73,7 +73,7 @@ export const Contact = () => {
                 </CardContent>
               </Card>
             ))}
-          </ol>
+          </div>
         </div>
       </div>
       <Footer />

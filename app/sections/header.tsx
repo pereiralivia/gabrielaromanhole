@@ -15,10 +15,10 @@ import { playfairDisplay } from "../ui/fonts";
 export const Header = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="flex justify-between items-center border-b-[#9d6d49]/10 py-5 px-4 fixed top-0  bg-[#fafafa] z-50 w-full md:px-20">
+    <div className="flex justify-between items-center border-b-[#9d6d49]/10 py-5 px-4 fixed top-0  bg-[#fafafa] z-50 w-full sm:px-20">
       <div className="sm:hidden">
         <Sheet open={open} onOpenChange={setOpen}>
-          <SheetTrigger>
+          <SheetTrigger aria-label="toggle mobile navigation">
             <MenuIcon className="text-[#9d6d49]" />
           </SheetTrigger>
           <SheetContent side="left">
@@ -26,8 +26,8 @@ export const Header = () => {
               <SheetTitle
                 className={`text-start ${playfairDisplay.className} rounded-full border border-[#9d6d49] w-10 h-10 flex items-center justify-center`}
               >
-                <span>G</span>
-                <span className="text-[#9d6d49]">R</span>
+                <div>G</div>
+                <div className="text-[#9d6d49]">R</div>
               </SheetTitle>
               <SheetDescription>
                 <div className="pt-6 px-4">
@@ -55,9 +55,9 @@ export const Header = () => {
           </SheetContent>
         </Sheet>
       </div>
-      <ul className="gap-6 hidden md:flex">
+      <ul className="gap-6 hidden sm:flex">
         {[
-          { href: "", label: "Início" },
+          { href: "/", label: "Início" },
           { href: "#about", label: "Quem sou" },
           { href: "#services", label: "Serviços" },
           { href: "#reviews", label: "Avaliações" },

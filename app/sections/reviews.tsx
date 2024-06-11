@@ -6,7 +6,7 @@ import { playfairDisplay } from "../ui/fonts";
 export const Reviews = () => {
   const reviews = [
     {
-      name: "Amanda C.",
+      name: "paciente anônimo",
       review: (
         <p>
           Gabriela passa serenidade, faz comentários pertinentes, te deixa a
@@ -50,7 +50,7 @@ export const Reviews = () => {
   ];
 
   return (
-    <div className="min-h-screen p-6 pt-14 bg-[#fafafa] md:px-20" id="reviews">
+    <div className="min-h-screen p-6 pt-14 bg-[#fafafa] sm:px-20" id="reviews">
       <div className="h-[45px]"></div>
       <div
         className={`uppercase text-3xl font-bold ${playfairDisplay.className}`}
@@ -58,7 +58,7 @@ export const Reviews = () => {
         O que meus <span className="text-[#9d6d49]">pacientes dizem</span> sobre
         mim
       </div>
-      <div className="grid md:grid-cols-3 gap-8 pt-8 ">
+      <div className="grid sm:grid-cols-3 gap-8 pt-8 ">
         {reviews.map((review, index) => (
           <div
             key={index}

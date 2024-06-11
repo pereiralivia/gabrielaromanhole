@@ -3,7 +3,7 @@ import { playfairDisplay } from "../ui/fonts";
 
 export const About = () => {
   return (
-    <div className="min-h-screen bg-[#fafafa] sm:px-20 py-6 px-6" id="about">
+    <div className="min-h-screen bg-[#fafafa] md:px-20 py-6 px-6" id="about">
       <div className="h-[45px]"></div>
       <div>
         <div
@@ -17,9 +17,9 @@ export const About = () => {
             alt="Gabriela Romanhole"
             width={400}
             height={400}
-            className="rounded-b-full rounded-tr-full float-right pl-6 pb-8 sm:pb-0"
+            className="rounded-b-full rounded-tr-full float-right pl-6 pb-8 md:pb-0"
           />
-          <p className="tracking-wider leading-7 gap-3 pt-8 sm:pt-0">
+          <p className="tracking-wider leading-7 gap-3 pt-8 md:pt-0">
             <span className="block pb-4">
               Desde criança me deparei com a curiosidade e o interesse em{" "}
               <span className="text-[#9d6d49]">entender de pessoas</span>. Eu as

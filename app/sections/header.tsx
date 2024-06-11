@@ -15,8 +15,8 @@ import { playfairDisplay } from "../ui/fonts";
 export const Header = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="flex justify-between items-center border-b-[#9d6d49]/10 py-5 px-4 fixed top-0  bg-[#fafafa] z-50 w-full sm:px-20">
-      <div className="sm:hidden">
+    <div className="flex justify-between items-center border-b-[#9d6d49]/10 py-5 px-4 fixed top-0  bg-[#fafafa] z-50 w-full md:px-20">
+      <div className="md:hidden">
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger aria-label="toggle mobile navigation">
             <MenuIcon className="text-[#9d6d49]" />
@@ -55,7 +55,7 @@ export const Header = () => {
           </SheetContent>
         </Sheet>
       </div>
-      <ul className="gap-6 hidden sm:flex">
+      <ul className="gap-6 hidden md:flex">
         {[
           { href: "/", label: "Início" },
           { href: "#about", label: "Quem sou" },

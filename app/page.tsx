@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col relative" id="#home">
       <div
-        className={`min-h-screen bg-[url("https://pereiralivia.github.io/background.webp")] bg-cover`}
+        className={`min-h-screen bg-[url("https://pereiralivia.github.io/gabrielaromanhole/background.webp")] bg-cover`}
       >
         <div className="h-[45px]"></div>
         <Header />

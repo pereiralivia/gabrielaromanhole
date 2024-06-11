@@ -40,7 +40,9 @@ export const metadata: Metadata = {
       "Gabriela Romanhole - Atendimento psicoterapêutico individual online",
     description:
       "Atendimento psicoterapêutico individual online com abordagem psicanalítica.",
-    images: ["https://pereiralivia.github.io/gabriela-romanhole.webp"],
+    images: [
+      "https://pereiralivia.github.io/gabrielaromanhole/gabriela-romanhole.webp",
+    ],
   },
 };
 

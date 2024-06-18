@@ -267,7 +267,8 @@ export const Services = () => {
       <div className="md:pb-4 flex flex-col gap-2 tracking-wide leading-7 text-[#101010] px-6">
         <p>
           Atendimento psicoterapêutico individual online, com metodologia
-          psicanalítica para pessoas a partir de 18 anos.
+          psicanalítica para pessoas{" "}
+          <span className="font-semibold">a partir de 18 anos</span>.
         </p>
         <p>
           A sessão ocorre por chamada de vídeo e é necessário estar num ambiente

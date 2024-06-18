@@ -11,16 +11,6 @@ import { useEffect, useState } from "react";
 export const Services = () => {
   const [currentItem, setCurrentItem] = useState("item-1");
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentItem((prev) => {
-        const next = parseInt(prev.split("-")[1]) + 1;
-        return next > 18 ? "item-1" : `item-${next}`;
-      });
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [currentItem]);
-
   const services = [
     {
       title: "Ansiedade",
@@ -225,7 +215,7 @@ export const Services = () => {
             agressões
           </span>{" "}
           de qualquer ordem em decorrência de seu{" "}
-          <span className="text-[#9d6d49]">gênero e identidade</span>?,
+          <span className="text-[#9d6d49]">gênero e identidade</span>?
         </p>
       ),
     },
@@ -236,7 +226,7 @@ export const Services = () => {
           Você já sofreu violência ou rejeição em decorrência de sua orientação
           sexual? Você sente{" "}
           <span className="text-[#9d6d49]">medo de assumir sua orientação</span>{" "}
-          e sofrer preconceito ?
+          e sofrer preconceito?
         </p>
       ),
     },
@@ -277,7 +267,7 @@ export const Services = () => {
       <div className="md:pb-4 flex flex-col gap-2 tracking-wide leading-7 text-[#101010] px-6">
         <p>
           Atendimento psicoterapêutico individual online, com metodologia
-          psicanalítica.
+          psicanalítica para pessoas a partir de 18 anos.
         </p>
         <p>
           A sessão ocorre por chamada de vídeo e é necessário estar num ambiente
@@ -293,22 +283,32 @@ export const Services = () => {
         orientation="vertical"
         onValueChange={setCurrentItem}
       >
-        {services.map((service, index) => (
-          <AccordionItem
-            key={service.title}
-            value={`item-${index + 1}`}
-            className="border-none bg-[#fafafa] rounded-tr-[30px] rounded-bl-[30px] mb-4 p-4 shadow-md shadow-[#9d6d49]/10"
-          >
-            <AccordionTrigger
-              className={`no-underline tracking-wide text-xl md:text-2xl text-[#9d6d49] font-light text-start ${playfairDisplay.className}`}
+        {services
+          .sort((a, b) => {
+            if (a.title < b.title) {
+              return -1;
+            }
+            if (a.title > b.title) {
+              return 1;
+            }
+            return 0;
+          })
+          .map((service, index) => (
+            <AccordionItem
+              key={service.title}
+              value={`item-${index + 1}`}
+              className="border-none bg-[#fafafa] rounded-tr-[30px] rounded-bl-[30px] mb-4 p-4 shadow-md shadow-[#9d6d49]/10"
             >
-              {service.title}
-            </AccordionTrigger>
-            <AccordionContent className="pt-2 text-[#101010] bg-[#fafafa] text-sm leading-6 tracking-wide md:text-md">
-              {service.description}
-            </AccordionContent>
-          </AccordionItem>
-        ))}
+              <AccordionTrigger
+                className={`no-underline tracking-wide text-xl md:text-2xl text-[#9d6d49] font-light text-start ${playfairDisplay.className}`}
+              >
+                {service.title}
+              </AccordionTrigger>
+              <AccordionContent className="pt-2 text-[#101010] bg-[#fafafa] text-sm leading-6 tracking-wide md:text-md">
+                {service.description}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
       </Accordion>
       <div className="hidden md:grid gap-6 md:grid-cols-3 pt-8 p-6">
         {services.map((service) => (

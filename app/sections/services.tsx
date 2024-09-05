@@ -43,7 +43,7 @@ export const Services = () => {
           <p>
             Já sentiu uma espécie de{" "}
             <span className="text-[#9d6d49]">anestesia dos sentidos</span> ou
-            <span className="text-[#9d6d49]">tristeza profunda</span> por
+            <span className="text-[#9d6d49]"> tristeza profunda</span> por
             período prolongado?
           </p>
         </div>

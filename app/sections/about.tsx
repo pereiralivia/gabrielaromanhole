@@ -97,7 +97,7 @@ export const About = () => {
               e as mudanças de quem me busca para tratamento psicológico. Fico à
               disposição para te ouvir nessa{" "}
               <span className="text-[#9d6d49]">
-                jornada de busca por acompanhamentos!
+                jornada de busca por acompanhamento!
               </span>
             </span>
           </p>

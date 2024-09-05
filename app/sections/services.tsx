@@ -42,8 +42,9 @@ export const Services = () => {
           </p>
           <p>
             Já sentiu uma espécie de{" "}
-            <span className="text-[#9d6d49]">anestesia dos sentidos </span> ou
-            tristeza profunda por período prolongado?
+            <span className="text-[#9d6d49]">anestesia dos sentidos</span> ou
+            <span className="text-[#9d6d49]">tristeza profunda</span> por
+            período prolongado?
           </p>
         </div>
       ),
@@ -64,7 +65,7 @@ export const Services = () => {
       description: (
         <p>
           Você tem dificuldade para dormir ou para ter um{" "}
-          <span className="text-[#9d6d49]">sono de qualidade</span> , mesmo que
+          <span className="text-[#9d6d49]">sono de qualidade</span>, mesmo que
           faça a higiene do sono antes de deitar?
         </p>
       ),
@@ -226,7 +227,7 @@ export const Services = () => {
           Você já sofreu violência ou rejeição em decorrência de sua orientação
           sexual? Você sente{" "}
           <span className="text-[#9d6d49]">medo de assumir sua orientação</span>{" "}
-          e sofrer preconceito?
+          e sofrer <span className="text-[#9d6d49]">preconceito</span>?
         </p>
       ),
     },
@@ -267,13 +268,13 @@ export const Services = () => {
       <div className="md:pb-4 flex flex-col gap-2 tracking-wide leading-7 text-[#101010] px-6">
         <p>
           Atendimento psicoterapêutico individual online, com metodologia
-          psicanalítica para pessoas{" "}
+          psicanalítica, para pessoas{" "}
           <span className="font-semibold">a partir de 18 anos</span>.
         </p>
         <p>
           A sessão ocorre por chamada de vídeo e é necessário estar num ambiente
           com privacidade para falar. Segue abaixo alguns exemplos das demandas
-          atendidas, dentre outros.
+          atendidas, dentre outras.
         </p>
       </div>
       <Accordion

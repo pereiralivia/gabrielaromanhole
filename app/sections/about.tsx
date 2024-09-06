@@ -13,7 +13,7 @@ export const About = () => {
         </div>
         <div>
           <Image
-            src="https://pereiralivia.github.io/gabrielaromanhole/gabriela-romanhole.webp"
+            src="https://gabrielaromanhole.com.br/gabriela-romanhole.webp"
             alt="Gabriela Romanhole"
             width={400}
             height={400}

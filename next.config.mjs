@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'pereiralivia.github.io',
+        hostname: 'gabrielaromanhole.com.br',
       },
     ],
   },

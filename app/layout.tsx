@@ -38,23 +38,21 @@ export const metadata: Metadata = {
     title: "Gabriela Romanhole - Atendimento psicoterapêutico online",
     description:
       "Atendimento psicoterapêutico individual online com abordagem psicanalítica.",
-    images: [
-      "https://pereiralivia.github.io/gabrielaromanhole/gabriela-romanhole.webp",
-    ],
+    images: ["https://gabrielaromanhole.com.br/gabriela-romanhole.webp"],
   },
   alternates: {
-    canonical: "https://pereiralivia.github.io/gabrielaromanhole/",
+    canonical: "https://gabrielaromanhole.com.br",
     languages: {
-      "pt-BR": "https://pereiralivia.github.io/gabrielaromanhole/",
+      "pt-BR": "https://gabrielaromanhole.com.br",
     },
   },
   icons: {
-    icon: "https://pereiralivia.github.io/gabrielaromanhole/icon.png",
-    shortcut: "https://pereiralivia.github.io/gabrielaromanhole/icon.png",
-    apple: "https://pereiralivia.github.io/gabrielaromanhole/icon.png",
+    icon: "https://gabrielaromanhole.com.br/icon.png",
+    shortcut: "https://gabrielaromanhole.com.br/icon.png",
+    apple: "https://gabrielaromanhole.com.br/icon.png",
     other: {
       rel: "apple-touch-icon-precomposed",
-      url: "https://pereiralivia.github.io/gabrielaromanhole/icon.png",
+      url: "https://gabrielaromanhole.com.br/icon.png",
     },
   },
 };

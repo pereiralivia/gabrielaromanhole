@@ -36,7 +36,7 @@ export const Header = () => {
                       { href: "/", label: "Início" },
                       { href: "#about", label: "Quem sou" },
                       { href: "#services", label: "Serviços" },
-                      { href: "#reviews", label: "Avaliações" },
+                      { href: "#reviews", label: "Depoimentos" },
                       { href: "#contact", label: "Contato" },
                     ].map((link) => (
                       <li
@@ -60,7 +60,7 @@ export const Header = () => {
           { href: "/", label: "Início" },
           { href: "#about", label: "Quem sou" },
           { href: "#services", label: "Serviços" },
-          { href: "#reviews", label: "Avaliações" },
+          { href: "#reviews", label: "Depoimentos" },
           { href: "#contact", label: "Contato" },
         ].map((link) => (
           <li

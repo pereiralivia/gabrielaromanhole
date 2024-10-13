@@ -12,7 +12,7 @@ export const Heading = () => {
       <div className="pt-1 text-lg">Psicóloga & Psicanalista</div>
       <div className="cursor-pointer mt-6 px-4 py-2.5 bg-[#9d6d49]/10 w-fit rounded-full hover:bg-[#9d6d49]/20 shadow-sm shadow-[#9d6d49]/10">
         <Link
-          href="#"
+          href="https://wa.me/5585996874109"
           className={`${playfairDisplay.className} uppercase text-[#9d6d49] flex gap-2 items-center text-sm md:text-base font-bold`}
         >
           <Calendar className="w-4 h-4" />

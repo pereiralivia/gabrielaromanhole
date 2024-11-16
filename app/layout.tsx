@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import "./globals.css";
 import { roboto } from "./ui/fonts";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "Gabriela Romanhole - Atendimento psicoterapêutico individual online",
@@ -64,6 +65,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <GoogleTagManager gtmId="AW-10934518873" />
       <body className={`${roboto.className}`}>{children}</body>
     </html>
   );

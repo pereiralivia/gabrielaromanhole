@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import "./globals.css";
 import { roboto } from "./ui/fonts";
 import { GoogleTagManager } from "@next/third-parties/google";
+import Head from "next/head";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Gabriela Romanhole - Atendimento psicoterapêutico individual online",
@@ -65,7 +67,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <GoogleTagManager gtmId="AW-10934518873" />
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=AW-10934518873"
+        strategy="afterInteractive"
+      />
+      <Script id="google-ads-script" strategy="afterInteractive">
+        {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'AW-10934518873');
+                `}
+      </Script>
+      {/* <GoogleTagManager gtmId="AW-10934518873" /> */}
       <body className={`${roboto.className}`}>{children}</body>
     </html>
   );

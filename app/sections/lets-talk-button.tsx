@@ -16,7 +16,7 @@ export const LetsTalkButton = () => {
     >
       <a
         href="https://wa.me/5585996874109"
-        className={`text-[#101010] tracking-wider text-xs md:text-[18px] font-semibold ${playfairDisplay.className}`}
+        className={`text-[#101010] tracking-wider text-base md:text-[18px] font-semibold ${playfairDisplay.className}`}
       >
         vamos conversar
       </a>

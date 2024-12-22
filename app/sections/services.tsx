@@ -71,7 +71,7 @@ export const Services = () => {
       ),
     },
     {
-      title: "Auto Estima",
+      title: "Autoestima",
       description: (
         <p>
           Você tem dificuldade de{" "}

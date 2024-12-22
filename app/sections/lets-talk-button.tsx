@@ -12,11 +12,11 @@ export const LetsTalkButton = () => {
         transition: { duration: 0.7 },
       }}
       whileTap={{ scale: 0.9 }}
-      className="flex items-center gap-1 border-b border-b-[#9d6d49] pb-1"
+      className="flex items-center gap-1 border-b-2 border-b-[#9d6d49] pb-1"
     >
       <a
         href="https://wa.me/5585996874109"
-        className={`text-[#101010] tracking-wider text-xs md:text-[16px] ${playfairDisplay.className}`}
+        className={`text-[#101010] tracking-wider text-xs md:text-[18px] font-semibold ${playfairDisplay.className}`}
       >
         vamos conversar
       </a>

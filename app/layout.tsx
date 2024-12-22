@@ -1,8 +1,6 @@
 import { Metadata } from "next";
 import "./globals.css";
 import { roboto } from "./ui/fonts";
-import { GoogleTagManager } from "@next/third-parties/google";
-import Head from "next/head";
 import Script from "next/script";
 
 export const metadata: Metadata = {
@@ -80,7 +78,6 @@ export default function RootLayout({
                 gtag('config', 'AW-10934518873');
                 `}
       </Script>
-      {/* <GoogleTagManager gtmId="AW-10934518873" /> */}
       <body className={`${roboto.className}`}>{children}</body>
     </html>
   );

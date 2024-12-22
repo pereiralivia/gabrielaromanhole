@@ -2,7 +2,7 @@ import { Playfair_Display, Roboto } from "next/font/google";
 
 export const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const roboto = Roboto({

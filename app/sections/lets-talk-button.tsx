@@ -5,6 +5,14 @@ import { ArrowUpRight } from "lucide-react";
 import { playfairDisplay } from "../ui/fonts";
 
 export const LetsTalkButton = () => {
+  const handleConversion = () => {
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag("event", "conversion", {
+        send_to: "AW-10934518873/iTV-CJD80o0bENmI_t0o",
+      });
+    }
+  };
+
   return (
     <motion.div
       whileHover={{
@@ -16,7 +24,9 @@ export const LetsTalkButton = () => {
     >
       <a
         href="https://wa.me/5585996874109"
+        onClick={handleConversion} // 👈 Trigger conversion here
         className={`text-[#101010] tracking-wider text-base md:text-[18px] font-semibold ${playfairDisplay.className}`}
+        target="_blank"
       >
         vamos conversar
       </a>

@@ -9,6 +9,13 @@ import { playfairDisplay } from "../ui/fonts";
 import { Footer } from "./footer";
 
 export const Contact = () => {
+  const handleConversion = () => {
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag("event", "conversion", {
+        send_to: "AW-10934518873/iTV-CJD80o0bENmI_t0o",
+      });
+    }
+  };
   const contactSteps = [
     {
       step: 1,
@@ -18,6 +25,8 @@ export const Contact = () => {
           <a
             href="https://wa.me/5585996874109"
             className="underline underline-offset-4 text-[#9d6d49]"
+            onClick={handleConversion}
+            target="_blank"
           >
             Clique aqui
           </a>{" "}

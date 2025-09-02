@@ -21,84 +21,32 @@ export const About = () => {
           />
           <p className="tracking-wider leading-7 gap-3 pt-8 md:pt-0">
             <span className="block pb-4">
-              Desde criança me deparei com a curiosidade e o interesse em{" "}
-              <span className="text-[#9d6d49]">entender de pessoas</span>. Eu as
-              observava atentamente e fazia minhas leituras acerca do
-              funcionamento delas.
-            </span>
-            <span className="block pb-4">
-              Ao chegar na última etapa da vida escolar fui questionada por
-              professores e colegas da turma do{" "}
+              Há mais de <span className="text-[#9d6d49]">10 anos</span> atuo no
+              acompanhamento psicológico clínico de pessoas adultas e idosas,
+              através da{" "}
+              <span className="text-[#9d6d49]">metodologia psicanalítica</span>,
+              sempre atenta à <span className="text-[#9d6d49]">ética</span>{" "}
+              profissional e ao{" "}
               <span className="text-[#9d6d49]">
-                porquê eu não escolhia uma segunda opção de curso
+                acolhimento centrado no contexto específico
               </span>{" "}
-              para prestar vestibular, prática comum entre os vestibulandos de
-              minha convivência à época. Eu simplesmente{" "}
-              <span className="text-[#9d6d49]">
-                não conseguia pensar no que mais eu gostaria de ser além de
-                psicóloga
-              </span>
-              !
-            </span>
-            <span className="block pb-4">
-              Decisão tomada, ingressei no curso de{" "}
-              <span className="text-[#9d6d49]">Psicologia</span> na Universidade
-              de Fortaleza (UNIFOR), no qual me formei em meados de{" "}
-              <span className="text-[#9d6d49]">2013</span>.
-            </span>
-            <span className="block pb-4">
-              Foram várias as dificuldades para alcançar o diploma, a tripla
-              jornada de trabalho, faculdade e vida pessoal/familiar me fizeram{" "}
-              <span className="text-[#9d6d49]">pensar em desistir</span>{" "}
-              incontáveis vezes…
-            </span>
-            <span className="block pb-4">
-              Minha caminhada foi mais longa do que a de meus colegas de turma e
-              a cada semestre de “atraso” do curso eu acessava a sensação de que{" "}
-              <span className="text-[#9d6d49]">
-                tornar-se uma profissional formada não seria uma possibilidade
-                pra mim.
-              </span>
-            </span>
-            <span className="block pb-4">
-              Porém, o desejo de exercer esse ofício e a pergunta que me
-              visitava desde a infância:{" "}
-              <span className="text-[#9d6d49]">
-                o que mais eu seria além de psicóloga?
-              </span>
-              , me fizeram dar continuidade até o fim da graduação.
-            </span>
-            <span className="block pb-4">
-              Nessa, conheci a psicanálise e logo cedo me identifiquei com sua{" "}
-              <span className="text-[#9d6d49]">
-                visão de ser humano e metodologia clínica
-              </span>
-              , base de meu trabalho, aliada aos estudos no campo
-              sócio-histórico-cultural-antropológico, que me ajudam a{" "}
-              <span className="text-[#9d6d49]">
-                compreender o ser contextualizado
-              </span>{" "}
-              com seu meio.
-            </span>
-            <span className="block pb-4">
-              De lá pra cá me engajo em uma{" "}
-              <span className="text-[#9d6d49]">
-                formação permanente e continuada
-              </span>
-              , através de vários canais como o contexto acadêmico, coletivos de
-              profissionais, grupos de formação (estudos, pesquisa e discussão
-              de casos clínicos), eventos da área, etc.
+              do paciente.
             </span>
             <span className="block pb-4">
               Tenho verdadeira{" "}
-              <span className="text-[#9d6d49]">
-                paixão por ouvir histórias e acompanhar os movimentos
-              </span>{" "}
-              e as mudanças de quem me busca para tratamento psicológico. Fico à
-              disposição para te ouvir nessa{" "}
-              <span className="text-[#9d6d49]">
-                jornada de busca por acompanhamento!
-              </span>
+              <span className="text-[#9d6d49]">paixão pelo meu trabalho</span>,
+              acho fascinante acompanhar cada história e seus desdobramentos! É
+              muito
+              <span className="text-[#9d6d49]"> gratificante </span>observar a
+              <span className="text-[#9d6d49]"> capacidade humana</span> de se
+              desenvolver e alcançar{" "}
+              <span className="text-[#9d6d49]">mudanças de vida!</span>
+            </span>
+            <span className="block pb-4">
+              Estou disponível para realizar{" "}
+              <span className="text-[#9d6d49]">terapia online</span>, recebendo
+              pacientes de{" "}
+              <span className="text-[#9d6d49]">qualquer parte do Brasil!</span>
             </span>
           </p>
           <div className="border border-[#9d6d49]/60  p-2 rounded flex gap-1 w-fit text-[#9d6d49]">
